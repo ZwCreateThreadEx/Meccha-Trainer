@@ -8,6 +8,8 @@ Dont pay for meccha chameleon cheats, the game currently has no anti cheat. Anyt
 # Overview
 Simplistic internal tool for Meccha Chameleon for enhancing visuals and perfecting aim
 
+![Menu image](image.png)
+
 ## Features table
 
 | Category | Feature | Options |
@@ -23,8 +25,6 @@ Simplistic internal tool for Meccha Chameleon for enhancing visuals and perfecti
 | ESP | Distance ESP | Toggle |
 | ESP | Team Colors | Toggle, Hunter Color |
 | ESP | Outline | Toggle, Color |
-
-![Menu image](image.png)
 
 ## Problem table
 | Problem | Solution | 
