@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c0f67a93-0e55-4782-8313-5d90d522a84b}</ProjectGuid>
+    <RootNamespace>MecchaInternal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MECCHAINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MECCHAINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MECCHAINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MECCHAINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\UserH\Desktop\Holder\Projects\Sources\Meccha\MecchaInternal\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>C:\Users\UserH\Desktop\Holder\Projects\Sources\Meccha\MecchaInternal\include\vendor\minhook\bin\libMinHook.x64.lib;dxgi.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\vendor\imgui\backend\imgui_impl_dx12.cpp" />
+    <ClCompile Include="include\vendor\imgui\backend\imgui_impl_win32.cpp" />
+    <ClCompile Include="include\vendor\imgui\framework\draw.cpp" />
+    <ClCompile Include="include\vendor\imgui\framework\helpers.cpp" />
+    <ClCompile Include="include\vendor\imgui\framework\widgets\menu.cpp" />
+    <ClCompile Include="include\vendor\imgui\framework\widgets\players.cpp" />
+    <ClCompile Include="include\vendor\imgui\framework\widgets\widgets.cpp" />
+    <ClCompile Include="include\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="include\vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="include\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="include\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="include\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="include\vendor\kiero\hook\hook.cpp" />
+    <ClCompile Include="include\vendor\kiero\kiero.cpp" />
+    <ClCompile Include="include\vendor\SDK\Basic.cpp" />
+    <ClCompile Include="include\vendor\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="include\vendor\SDK\Engine_functions.cpp" />
+    <ClCompile Include="include\vendor\SimpleMath\SimpleMath.cpp" />
+    <ClCompile Include="src\cheats\aimbot.cpp" />
+    <ClCompile Include="src\cheats\painter\painter.cpp" />
+    <ClCompile Include="src\cheats\visuals.cpp" />
+    <ClCompile Include="src\classes\game.cpp" />
+    <ClCompile Include="src\entry.cpp" />
+    <ClCompile Include="src\gui\render.cpp" />
+    <ClCompile Include="src\logger\logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\include.h" />
+    <ClInclude Include="include\vendor\imgui\backend\imgui_impl_dx12.h" />
+    <ClInclude Include="include\vendor\imgui\backend\imgui_impl_win32.h" />
+    <ClInclude Include="include\vendor\imgui\fonts\fa-icons.h" />
+    <ClInclude Include="include\vendor\imgui\fonts\fa-webfont.h" />
+    <ClInclude Include="include\vendor\imgui\fonts\Montserrat.h" />
+    <ClInclude Include="include\vendor\imgui\framework\framework.h" />
+    <ClInclude Include="include\vendor\imgui\imconfig.h" />
+    <ClInclude Include="include\vendor\imgui\imgui.h" />
+    <ClInclude Include="include\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="include\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="include\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="include\vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="include\vendor\kiero\hook\hook.h" />
+    <ClInclude Include="include\vendor\kiero\kiero.h" />
+    <ClInclude Include="include\vendor\minhook\MinHook.h" />
+    <ClInclude Include="include\vendor\PropertyFixup.hpp" />
+    <ClInclude Include="include\vendor\SDK.hpp" />
+    <ClInclude Include="include\vendor\SimpleMath\SimpleMath.h" />
+    <ClInclude Include="include\vendor\UnrealContainers.hpp" />
+    <ClInclude Include="include\vendor\UtfN.hpp" />
+    <ClInclude Include="src\cheats\cheats.h" />
+    <ClInclude Include="src\classes\classes.h" />
+    <ClInclude Include="src\globals.h" />
+    <ClInclude Include="src\logger\logger.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\vendor\Assertions.inl" />
+    <None Include="include\vendor\NameCollisions.inl" />
+    <None Include="include\vendor\SimpleMath\SimpleMath.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
