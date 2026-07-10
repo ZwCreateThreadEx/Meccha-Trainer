@@ -1,0 +1,19 @@
+# builds
+/MecchaInternal/x64/
+/MecchaLoader/x86/
+/build/
+
+# vs generated files
+.vs/
+*.suo
+*.user
+
+# UE SDK
+/MecchaInternal/include/vendor/SDK/
+
+# binaries
+*.exe
+*.dll
+*.obj
+*.pdb
+*.ilk
