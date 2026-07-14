@@ -36,6 +36,8 @@ Simplistic internal tool for Meccha Chameleon for enhancing visuals and perfecti
 # How to use
 Download latest Release and run MecchaLoader.exe when your game is open, or inject MecchaInternal.dll with any other native DLL injector.
 
+If you crash on inject please check your game version when you launch in the top right it will show a version (eg 2.6.4) then check the release tag on this repo and see if the version in game matches. If not the SDK is outdated and il update it soon.
+
 Thanks to Dumper-7 for UE SDK Generation
 - https://github.com/Encryqed/Dumper-7
 
