@@ -1,5 +1,7 @@
 # Meccha-Trainer
 
+![Downloads](https://img.shields.io/github/downloads/ZwCreateThreadEx/Meccha-Trainer/total)
+
 Simple Meccha Chameleon aim trainer with visuals.
 Dont pay for meccha chameleon cheats, the game currently has no anti cheat. Anything those cheats have will be right here soon!
 
