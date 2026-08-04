@@ -1,6 +1,6 @@
 # Meccha-Trainer
 
-![Release](https://img.shields.io/github/v/release/ZwCreateThreadEx/Meccha-Trainer)
+![Updated for version](https://img.shields.io/github/v/release/ZwCreateThreadEx/Meccha-Trainer)
 
 Simple Meccha Chameleon aim trainer with visuals.
 Dont pay for meccha chameleon cheats, the game currently has no anti cheat. Anything those cheats have will be right here soon!
@@ -27,6 +27,8 @@ Simplistic internal tool for Meccha Chameleon for enhancing visuals and perfecti
 | ESP | Distance ESP | Toggle |
 | ESP | Team Colors | Toggle, Hunter Color |
 | ESP | Outline | Toggle, Color |
+| Settings | Menu keybind | Toggle |
+| Settings | Menu active bg | Toggle |
 
 ## Problem table
 | Problem | Solution | 
