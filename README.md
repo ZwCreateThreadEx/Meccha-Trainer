@@ -12,7 +12,7 @@ Dont pay for meccha chameleon cheats, the game currently has no anti cheat. Anyt
 # Overview
 Simplistic internal tool for Meccha Chameleon for enhancing visuals and perfecting aim
 
-![Menu image](menu.png)
+![Menu image](menu-upd.png)
 
 ## Features table
 
